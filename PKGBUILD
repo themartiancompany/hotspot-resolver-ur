@@ -23,6 +23,7 @@ license=(
   AGPL3
 )
 depends=(
+  "iproute2"
   "libcrash-bash"
   "net-tools"
   "ffmpeg"

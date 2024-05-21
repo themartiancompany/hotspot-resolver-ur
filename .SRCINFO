@@ -6,6 +6,7 @@ pkgbase = hotspot-resolver
 	arch = any
 	license = AGPL3
 	checkdepends = shellcheck
+	depends = iproute2
 	depends = libcrash-bash
 	depends = net-tools
 	depends = ffmpeg
