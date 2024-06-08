@@ -1,15 +1,15 @@
 pkgbase = hotspot-resolver
-	pkgdesc = A collection of media manipulation scripts.
+	pkgdesc = Returns addresses for hostnames connected to an hotspot.
 	pkgver = 0.0.0.0.0.0.0.0.0.0.0.0.1.1
 	pkgrel = 1
 	url = https://github.com/themartiancompany/hotspot-resolver
 	arch = any
 	license = AGPL3
 	checkdepends = shellcheck
+	makedepends = make
 	depends = iproute2
 	depends = libcrash-bash
 	depends = net-tools
-	depends = ffmpeg
 	source = hotspot-resolver-a85e812bc68c3e7928f4a52f6f4889544469efa8.zip::https://github.com/themartiancompany/hotspot-resolver/archive/a85e812bc68c3e7928f4a52f6f4889544469efa8.zip
 	sha256sums = 3c9cf8546096c26250309c1f36a6f49aa29f4a1b23ab61cf37db866c423729ae
 

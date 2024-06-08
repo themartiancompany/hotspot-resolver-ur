@@ -10,7 +10,8 @@ pkgver=0.0.0.0.0.0.0.0.0.0.0.0.1.1
 _commit="a85e812bc68c3e7928f4a52f6f4889544469efa8"
 pkgrel=1
 _pkgdesc=(
-  "A collection of media manipulation scripts."
+  "Returns addresses for hostnames"
+  "connected to an hotspot."
 )
 pkgdesc="${_pkgdesc[*]}"
 arch=(
@@ -26,7 +27,6 @@ depends=(
   "iproute2"
   "libcrash-bash"
   "net-tools"
-  "ffmpeg"
 )
 _os="$( \
   uname \
@@ -37,7 +37,9 @@ optdepends=(
 [[ "${_os}" == "Android" ]] && \
   optdepends+=(
   )
-makedepends=()
+makedepends=(
+  make
+)
 checkdepends=(
   "shellcheck"
 )
