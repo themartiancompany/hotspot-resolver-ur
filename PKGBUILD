@@ -6,8 +6,8 @@
 _offline="false"
 _git="false"
 pkgname=hotspot-resolver
-pkgver=0.0.0.0.0.0.0.0.0.0.0.0.1.1
-_commit="a85e812bc68c3e7928f4a52f6f4889544469efa8"
+pkgver=0.0.0.0.0.0.0.0.0.0.0.0.1.1.1
+_commit="aa5532cdd43e475b4ce4cf31629c9ba9944a3a2f"
 pkgrel=1
 _pkgdesc=(
   "Returns addresses for hostnames"
@@ -33,9 +33,15 @@ _os="$( \
     -o)"
 optdepends=(
 )
+[[ "${_os}" == "GNU/Linux" ]] && \
+[[ "${_os}" != "Android" ]] && \
+  depends+=(
+    'wireless_tools'
+)
 [[ "${_os}" != "GNU/Linux" ]] && \
 [[ "${_os}" == "Android" ]] && \
-  optdepends+=(
+  depends+=(
+    'wireless-tools'
   )
 makedepends=(
   make
@@ -67,7 +73,7 @@ _tarname="${pkgname}-${_tag}"
     _sum='b245547bdcdbfeb09f400305a4b515b6d49635be90f560a39302761fc2688571'
   elif [[ "${_tag_name}" == "commit" ]]; then
     _tar="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum="3c9cf8546096c26250309c1f36a6f49aa29f4a1b23ab61cf37db866c423729ae"
+    _sum="0fbc5af30325af46c1ca15cbdbbc6639c8b4f430a3fbc91af5269b6b53ad1451"
   fi && \
     source+=(
       "${_tar}"

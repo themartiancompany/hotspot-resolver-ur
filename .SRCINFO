@@ -1,6 +1,6 @@
 pkgbase = hotspot-resolver
 	pkgdesc = Returns addresses for hostnames connected to an hotspot.
-	pkgver = 0.0.0.0.0.0.0.0.0.0.0.0.1.1
+	pkgver = 0.0.0.0.0.0.0.0.0.0.0.0.1.1.1
 	pkgrel = 1
 	url = https://github.com/themartiancompany/hotspot-resolver
 	arch = any
@@ -10,7 +10,8 @@ pkgbase = hotspot-resolver
 	depends = iproute2
 	depends = libcrash-bash
 	depends = net-tools
-	source = hotspot-resolver-a85e812bc68c3e7928f4a52f6f4889544469efa8.zip::https://github.com/themartiancompany/hotspot-resolver/archive/a85e812bc68c3e7928f4a52f6f4889544469efa8.zip
-	sha256sums = 3c9cf8546096c26250309c1f36a6f49aa29f4a1b23ab61cf37db866c423729ae
+	depends = wireless-tools
+	source = hotspot-resolver-aa5532cdd43e475b4ce4cf31629c9ba9944a3a2f.zip::https://github.com/themartiancompany/hotspot-resolver/archive/aa5532cdd43e475b4ce4cf31629c9ba9944a3a2f.zip
+	sha256sums = 0fbc5af30325af46c1ca15cbdbbc6639c8b4f430a3fbc91af5269b6b53ad1451
 
 pkgname = hotspot-resolver
