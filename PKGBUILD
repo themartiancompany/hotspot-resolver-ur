@@ -6,8 +6,8 @@
 _offline="false"
 _git="false"
 pkgname=hotspot-resolver
-pkgver=0.0.0.0.0.0.0.0.0.0.0.0.1.1.1
-_commit="aa5532cdd43e475b4ce4cf31629c9ba9944a3a2f"
+pkgver="0.0.0.0.0.0.0.0.0.0.0.0.1.1.1"
+_commit="50b5fba2b5a004416ba37a25559a0aaf2e3ae39e"
 pkgrel=1
 _pkgdesc=(
   "Returns addresses for hostnames"
@@ -73,7 +73,7 @@ _tarname="${pkgname}-${_tag}"
     _sum='b245547bdcdbfeb09f400305a4b515b6d49635be90f560a39302761fc2688571'
   elif [[ "${_tag_name}" == "commit" ]]; then
     _tar="${_tarname}.zip::${_url}/archive/${_commit}.zip"
-    _sum="0fbc5af30325af46c1ca15cbdbbc6639c8b4f430a3fbc91af5269b6b53ad1451"
+    _sum='f246ec7f4c4ce1bdba4917f3c913df01d04e9292f87f8321eb0f08dc46b75531'
   fi && \
     source+=(
       "${_tar}"
